@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Love Letter</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #ffeef2;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #d6336c;
+    }
+
+    #loveLetter {
+      max-width: 600px;
+      background: #fff0f5;
+      padding: 20px 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease;
+      display: none;
+      text-align: left;
+    }
+
+    button {
+      background-color: #d6336c;
+      color: white;
+      padding: 12px 25px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin: 10px;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #c2185b;
+    }
+
+    #loveLetter.show {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    #buttons {
+      display: flex;
+      gap: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>For Julianna Krystal Daño, Happy Girlfriend's Day!💌
+  </h1>
+  <div id="buttons">
+    <button onclick="showLetter()">Open</button>
+    <button onclick="hideLetter()">Close</button>
+  </div>
+
+  <div id="loveLetter">
+    <p>Hi my baby,</p>
+    <p>
+      I want you to know that I never forget on greeting you in this wonderful day! 
+      sure, I am the luckiest person and taga adlaw thankful kaayo kay God kay he gave me you, baby.
+      I promise to always be here for you, to support you, and to love you with all my heart.
+      Sorry, I know I’m not perfect, but I promise to always try my best to give you all the love that you deserve.
+    </p>
+    <p>
+      Thank you for being you. I’m grateful for every moment we share,
+      and day by day, akong love nimo nagkadako, my baby.
+    </p>
+    <p>Your Lover,</p>
+    <p><strong>Talingting Jay❤️</strong></p>
+  </div>
+
+  <script>
+    function showLetter() {
+      document.getElementById("loveLetter").classList.add("show");
+    }
+
+    function hideLetter() {
+      document.getElementById("loveLetter").classList.remove("show");
+    }
+  </script>
+
+</body>
+</html>
